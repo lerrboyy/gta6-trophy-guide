@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonida Trophy Guide — GTA 6</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Leonida Trophy Guide</h1>
+    <p>All 55 GTA 6 trophies on PlayStation 5: a guide and a tracker. Works offline.</p>
+  </header>
+
+  <div id="progress">
+    <span id="progress-text">0 / 55 earned</span>
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+  </div>
+
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search trophies…">
+    <div id="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="story">Story</button>
+      <button data-filter="missable">Missable</button>
+      <button data-filter="collectible">Collectibles</button>
+      <button data-filter="activity">Activities</button>
+      <button data-filter="earned">Earned</button>
+      <button data-filter="unearned">Not earned</button>
+    </div>
+    <div class="select-group">
+      <select id="grade-filter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+      <label><input id="spoiler" type="checkbox"> Hide story spoilers until earned</label>
+    </div>
+    <div class="actions">
+      <button id="export">Export progress</button>
+      <label class="file-btn">Import progress <input id="import" type="file" accept=".json,application/json"></label>
+      <button id="reset">Reset progress</button>
+    </div>
+  </div>
+
+  <section id="roadmap">
+    <h2>Roadmap to the platinum</h2>
+    <ol>
+      <li>Story — play Chapters 1–4 and the final mission (trophies 2–14, 22–27).</li>
+      <li>Side — stranger strands, activities and partner missions (trophies 15, 16, 19–21, 25, 29, 33–34, 36–41, 44–51).</li>
+      <li>Collectibles — shooting range, drone races, meditation spots, cards, WAiNK, vehicles, areas, gangs, garages (trophies 17, 18, 28, 30, 31, 35, 42, 43, 52, 54, 55).</li>
+      <li>Cleanup — 50 challenges, $100,000 spent, 100% completion, then the platinum (trophies 32, 53, 14, 1).</li>
+    </ol>
+  </section>
+
+  <section id="missables">
+    <h2>Missable trophies</h2>
+    <p>8 trophies can be missed if you pass the moment: Hot Together, Retail Therapy, Gunslinger, Sneakthief, Capital Offense, Personal Best, Actions Speak Louder, Bad Luck, I Guess. Do them when the chance appears, or keep a save before each.</p>
+  </section>
+
+  <ul id="trophies"></ul>
+
+  <section id="detail">
+    <h2 id="detail-name">Pick a trophy</h2>
+    <p id="detail-desc"></p>
+    <p id="detail-guide"></p>
+    <p id="detail-sources"></p>
+  </section>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
